@@ -1,0 +1,233 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: uvicorn
+Upstream-Contact: Tom Christie <tom@tomchristie.com>
+Source: https://github.com/encode/uvicorn
+
+Files:     .github/ISSUE_TEMPLATE/1-issue.yml
+           .github/ISSUE_TEMPLATE/config.yml
+           .github/dependabot.yml
+           .github/workflows/benchmark.yml
+           .github/workflows/main.yml
+           .github/workflows/publish.yml
+           .github/workflows/zizmor.yml
+           .gitignore
+           CITATION.cff
+           docs/CNAME
+           docs/concepts/asgi.md
+           docs/concepts/event-loop.md
+           docs/concepts/lifespan.md
+           docs/concepts/logging.md
+           docs/concepts/websockets.md
+           docs/contributing.md
+           docs/css/extra.css
+           docs/deployment/docker.md
+           docs/deployment/index.md
+           docs/img/fastapi-logo.png
+           docs/img/gh-actions-fail.png
+           docs/installation.md
+           docs/overrides/main.html
+           docs/overrides/partials/nav.html
+           docs/release-notes.md
+           docs/server-behavior.md
+           docs/settings.md
+           docs/uvicorn.png
+           mkdocs.yml
+           pyproject.toml
+           scripts/build
+           scripts/check
+           scripts/coverage
+           scripts/docs
+           scripts/install
+           scripts/lint
+           scripts/sync-version
+           scripts/test
+           tests/__init__.py
+           tests/benchmarks/__init__.py
+           tests/benchmarks/http.py
+           tests/benchmarks/test_http.py
+           tests/benchmarks/test_ws.py
+           tests/benchmarks/ws.py
+           tests/conftest.py
+           tests/custom_loop_utils.py
+           tests/importer/__init__.py
+           tests/importer/circular_import_a.py
+           tests/importer/circular_import_b.py
+           tests/importer/raise_import_error.py
+           tests/importer/test_importer.py
+           tests/middleware/__init__.py
+           tests/middleware/test_logging.py
+           tests/middleware/test_message_logger.py
+           tests/middleware/test_proxy_headers.py
+           tests/middleware/test_wsgi.py
+           tests/protocols/__init__.py
+           tests/protocols/test_http.py
+           tests/protocols/test_utils.py
+           tests/protocols/test_websocket.py
+           tests/response.py
+           tests/supervisors/__init__.py
+           tests/supervisors/test_multiprocess.py
+           tests/supervisors/test_reload.py
+           tests/supervisors/test_signal.py
+           tests/test_auto_detection.py
+           tests/test_cli.py
+           tests/test_compat.py
+           tests/test_config.py
+           tests/test_default_headers.py
+           tests/test_lifespan.py
+           tests/test_main.py
+           tests/test_server.py
+           tests/test_ssl.py
+           tests/test_subprocess.py
+           tests/utils.py
+           uv.lock
+           uvicorn/__init__.py
+           uvicorn/__main__.py
+           uvicorn/_ansi.py
+           uvicorn/_compat.py
+           uvicorn/_subprocess.py
+           uvicorn/config.py
+           uvicorn/importer.py
+           uvicorn/lifespan/__init__.py
+           uvicorn/lifespan/off.py
+           uvicorn/lifespan/on.py
+           uvicorn/logging.py
+           uvicorn/loops/__init__.py
+           uvicorn/loops/asyncio.py
+           uvicorn/loops/auto.py
+           uvicorn/loops/uvloop.py
+           uvicorn/main.py
+           uvicorn/middleware/__init__.py
+           uvicorn/middleware/asgi2.py
+           uvicorn/middleware/message_logger.py
+           uvicorn/middleware/proxy_headers.py
+           uvicorn/middleware/wsgi.py
+           uvicorn/protocols/__init__.py
+           uvicorn/protocols/http/__init__.py
+           uvicorn/protocols/http/auto.py
+           uvicorn/protocols/http/flow_control.py
+           uvicorn/protocols/http/h11_impl.py
+           uvicorn/protocols/http/httptools_impl.py
+           uvicorn/protocols/utils.py
+           uvicorn/protocols/websockets/__init__.py
+           uvicorn/protocols/websockets/auto.py
+           uvicorn/protocols/websockets/websockets_impl.py
+           uvicorn/protocols/websockets/websockets_sansio_impl.py
+           uvicorn/protocols/websockets/wsproto_impl.py
+           uvicorn/py.typed
+           uvicorn/server.py
+           uvicorn/supervisors/__init__.py
+           uvicorn/supervisors/basereload.py
+           uvicorn/supervisors/multiprocess.py
+           uvicorn/supervisors/statreload.py
+           uvicorn/supervisors/watchfilesreload.py
+           uvicorn/workers.py
+           wrangler.toml
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     docs/img/gh-actions-fail-check.png
+Copyright: __NO_COPYRIGHT__ in: docs/img/gh-actions-fail-check.png
+License:   __UNKNOWN__
+ _MANY_NON_ASCII_(40chars. over 64chars.) starting with: âàÁ¤¤¤X+¿üÒæÜ>>>¼ûÞûÌøü³+rRµjÕ8r£ÑA¯'äøñ'z¾§eÕW+ùjeæ}¾rå
+
+Files:     uvicorn/_types.py
+Copyright: Django Software Foundation and individual contributors.
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ 3. Neither the name of Django nor the names of its contributors may be used
+ to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files:     LICENSE.md
+Copyright: 2017 present, [Encode OSS Ltd](https://www.encode.io/).
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ * Neither the name of the copyright holder nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         README.md
+#         .github/PULL_REQUEST_TEMPLATE.md
+#         docs/index.md
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE.md
+ Copyright © 2017-present, [Encode OSS Ltd](https://www.encode.io/).
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ .
+ * Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

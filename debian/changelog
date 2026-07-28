@@ -1,0 +1,10 @@
+python-uvicorn (0.51.0-1~vitex1) UNRELEASED; urgency=low
+
+  * Initial Debian packaging.
+  * Packaged to provide a newer uvicorn than Debian trixie's own
+    python3-uvicorn 0.32.0-3, needed for the
+    uvicorn.protocols.websockets.websockets_sansio_impl module
+    required by fastmcp's HTTP transport (available from uvicorn
+    >= 0.34).
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Tue, 28 Jul 2026 17:15:48 +0200

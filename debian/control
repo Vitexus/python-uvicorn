@@ -1,0 +1,35 @@
+Source: python-uvicorn
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-hatchling,
+Standards-Version: 4.7.0
+Homepage: https://uvicorn.dev/
+Vcs-Git: https://github.com/Vitexus/python-uvicorn.git
+Vcs-Browser: https://github.com/Vitexus/python-uvicorn
+Rules-Requires-Root: no
+
+Package: python3-uvicorn
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ python3-click,
+ python3-h11,
+ python3-typing-extensions | python3-supported-min (>= 3.11),
+ ${misc:Depends},
+ ${python3:Depends},
+Description: lightning-fast ASGI server implementation (Python 3)
+ Uvicorn is an ASGI web server implementation for Python, supporting
+ HTTP/1.1 and WebSockets.
+ .
+ This package is built from a newer upstream release than the one
+ shipped by Debian, in order to provide the
+ uvicorn.protocols.websockets.websockets_sansio_impl module required
+ by fastmcp's HTTP transport (only present from uvicorn >= 0.34).
+ .
+ This package contains the Python 3 version of the library.
