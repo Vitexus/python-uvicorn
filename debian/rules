@@ -5,5 +5,17 @@ export PYBUILD_NAME=uvicorn
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
+override_dh_auto_configure:
+	# Older hatchling (as shipped on bookworm/jammy/noble) ships an older
+	# trove-classifiers list that doesn't know about Python 3.13/3.14 yet,
+	# and rejects the whole build with "Unknown classifier". These
+	# classifiers are metadata only, not required for the build.
+	sed -i '/"Programming Language :: Python :: 3\.13",/d;/"Programming Language :: Python :: 3\.14",/d' pyproject.toml
+	dh_auto_configure
+
+override_dh_auto_clean:
+	dh_auto_clean
+	git checkout pyproject.toml 2>/dev/null || true
+
 override_dh_auto_test:
 	# Skip tests - test dependencies not packaged
