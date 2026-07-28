@@ -11,6 +11,10 @@ override_dh_auto_configure:
 	# and rejects the whole build with "Unknown classifier". These
 	# classifiers are metadata only, not required for the build.
 	sed -i '/"Programming Language :: Python :: 3\.13",/d;/"Programming Language :: Python :: 3\.14",/d' pyproject.toml
+	# Older hatchling (bookworm/jammy/noble) expects project.license-files
+	# to be a table, not the newer PEP 639 list-of-globs format; drop it,
+	# it is metadata only (license = "BSD-3-Clause" is kept).
+	sed -i '/^license-files = /d' pyproject.toml
 	dh_auto_configure
 
 override_dh_auto_clean:
